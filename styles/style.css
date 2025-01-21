@@ -375,5 +375,268 @@ body {
   }
   
   .carousel-buttons button:hover {
-    background-color: #37e918;
+    background-color: #3b2ad4;
   }
+
+
+
+
+
+  /* Our Stories */
+/* CSS */
+
+
+  .section-22{
+    justify-items: center;
+    margin:0 auto;
+    background: linear-gradient(180deg,white, #FFE8BF );
+  
+  }
+
+.our-stories-title{
+  width: 460px;
+  height: 58px;
+  color: black;
+  font-size: 3rem;
+  margin-left: 500px;
+  margin-bottom: 20px;
+  
+}
+  
+  .our-stories{
+    /* border: 1px solid lawngreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1160px;
+    height: 630px;
+    gap: 18px;
+    margin-left: 170px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+   
+  }
+
+  .container-1{
+    background-color: white;
+    /* border: 2px solid rgb(233, 10, 10); */
+    width: 540px;
+    height: 630px;
+    border-radius: 16px;
+    box-shadow: 0 4px 3px #05a615;
+  }
+  .container-child img{
+    width: 540px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  
+
+  .card-title-1{
+    /* border: 2px solid rgb(0, 255, 42); */
+    font-size: 1.5rem;
+    width: 402px;
+    height: 70px;
+    /* padding: 38px; */
+    margin: 38px;
+  }
+.card-description{
+  color: #666666;
+  font-size: 1rem;
+  width: 433px;
+  height: 75px;
+  margin: 34px;
+}
+
+  .card-title-2{
+    /* border: 2px solid #f2f609; */
+    width: 200px;
+    height: 48px;
+    font-size: 1rem;
+
+  }
+
+
+
+
+
+
+
+  .container-2{
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 540px;
+    height: 630px;
+    gap: 16px;
+    
+    
+  }
+  .stories-1{
+    /* border: 1px solid rgb(128, 98, 0); */
+    width: 260px;
+    height: 301px;
+    border-radius: 16px;
+    box-shadow: 0 4px 3px #05a615;
+    background-color: white;
+  }
+ .card-title-2{
+  margin: 10px auto;
+ }
+  .stories-1 img{
+    /* border-radius: 20px; */
+    width: 260px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+  }
+
+  .Stories-btn{
+    width: 197px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin-top: 30px;
+
+  }
+
+
+  .stories-1 button{
+    width: 174px;
+  height: 38px;
+  color: #fff;
+  border-radius: 47px;
+  font-size: 1rem;
+  transform: translate(-50%, -50%);
+  margin-left: 40%;
+  border: none;
+ box-shadow: 0 4px 4px rgba(237, 31, 4, 0.2);
+  }
+
+  .our-btn-1{
+    background-color: #3CD8E8;
+    width: 174px;
+    height: 38px;
+    color: #fff;
+    border-radius: 47px;
+    font-size: 1rem;
+    transform: translate(-60%, -75%);
+    /* margin-left: 50%; */
+    border: none;
+   box-shadow: 0 4px 4px rgba(237, 31, 4, 0.2);
+  }
+ .our-btn-2 {
+ background-color: #95B226;
+  }
+  .our-btn-3{
+    background-color: #5D58F0;
+  } 
+
+  .container-1:hover {
+    /* background-color: #3b2ad4; */
+    transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+.stories-1:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/* responsive --Our Stories */
+/* @media screen and (max-width: 676px) {
+  
+} */
+@media (max-width: 576px) {
+
+  .container-1 {
+    display: none;
+  }
+
+  .our-stories-title {
+    font-size: 2rem;
+    width: auto;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .our-stories {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .container-2 {
+    width: 90%;
+    height: 80%;
+    gap: 2px;
+    margin: 0px;
+    padding: 5px;
+   
+  }
+
+  .container-child img {
+    width: 100%;
+  }
+
+  .card-title-1,
+  .card-description {
+    width: auto;
+    margin: 20px;
+  }
+
+  .stories-1 {
+    width: 90%;
+    height: 220px;
+  }
+
+  .stories-1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-title-2 {
+    width: auto;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .stories-1 button {
+    transform: translate(0, 0);
+    margin: 10px auto;
+    display: block;
+    width: 70%;
+    height: 30px;
+    font-size: 10px;
+    transform: translate(-40%, -80%);
+    margin-left: 40%;
+  }
+
+  .Stories-btn {
+    width: 50%;
+    font-size: 1rem;
+    height: 45px;
+    margin: 40px auto; 
+    display: block; 
+    display: flex;
+    text-align: center;
+  
+    
+  }
+}
+
+
