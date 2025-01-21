@@ -136,6 +136,16 @@ body {
   margin: 10px;
 }
 
+.arrow{
+  border: 1px solid rebeccapurple;
+  display: flex;
+}
+
+
+
+
+
+
 /* Responsive Styles */
 @media (max-width: 676px) {
   .manu{
@@ -201,10 +211,38 @@ body {
 
 /* main function er kaj suru korsi kintu */
 
+
+/* section standard curriculam */
+/* .curriculum-container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px;
+  background-image: url('../assets/bg.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 18px;
+  color: #333;
+  
+  
+} */
+
+
+
+
 .background{
-    position: relative;
+    /* position: relative;
     width: 1440px;
-    height: 880px;
+    height: 880px; */
+    text-align: center;
+  margin: 0 auto;
+  padding: 40px;
+  background-image: url('../assets/bg.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 18px;
+  color: #333;
 }
 
 
@@ -218,35 +256,45 @@ body {
 }
 
 .container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* border: 1px solid sienna; */
-    display: grid;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+   
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 1440px;
     height: 840px;
     gap: 20px;
     padding: 80px;
     margin: 0 auto;
-    /* margin-top: 80px; */
+  
     justify-content: center;
     align-items: center;
-    justify-items: center;
+    justify-items: center; */
 }
 
 .box{
-    border: 2px solid #e0e0e0;
+
+  width: 367px;
+  height: 475px;
+  border-radius: 18px;
+  box-shadow: 0 4px 3px rgb(206, 91, 110);
+  margin-top: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;  
+    /* border: 2px solid #e0e0e0;
     background-color: #fff;
     width: 368px;
     height: 480px;
     border-radius: 18px;
-    /* justify-content: center; */
+    
     text-align: center;
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
 
-    box-shadow: 0 4px 3px #e0e0e0;
+    box-shadow: 0 4px 3px #e0e0e0; */
 }
 
 .box img{
@@ -305,4 +353,27 @@ body {
 .box:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+    
+  .carousel-buttons {
+    margin-top: 50px;
+   
+  }
+  
+  .carousel-buttons button {
+    background-color: orange;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .carousel-buttons button:hover {
+    background-color: #37e918;
   }
