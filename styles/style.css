@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Removes horizontal scroll issue */
+}
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.manu{
+  border: 0.5px solid orange;
+  /* border-bottom: 0.5px solid orange ; */
+  /* display: none; */
+}
+.man {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  margin: 16px;
+
+}
+
+.display-flex {
+  display: flex;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.navbar-display-1 {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.nav-link-1{
+  color: orange;
+}
+.nav-link-2{
+  color: skyblue;
+}
+.nav-link-3{
+  color: #05d4df;
+}
+.nav-link-4{
+  color: #05d4df;
+}
+
+
+.nav-btn{
+  width: 197px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 20px;
+  background-color: orange;
+  color: white;
+}
+
+
+
+.banner {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+  /* text-align: center;  */
+  padding: 20px;
+  gap: 40px;
+}
+
+.banner-content{
+  /* border: 2px solid palegreen; */
+  width: 640px;
+ height: 331px;
+ padding: 20px;
+}
+
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.h1-orange {
+  color: orange;
+}
+
+.h1-skyblue {
+  color: skyblue;
+}
+
+.banner-description {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.h1-btn{
+  background-color: black;
+  color: white;
+  width: 197px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+
+.banner-img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 676px) {
+  .manu{
+    border: 0.5px solid orange;
+    
+  
+  }
+  .man{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    
+}
+  .navbar{
+    flex-direction: column;
+    display: none;
+    gap: 20px;
+    
+}
+
+
+
+
+
+  .navbar {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner {
+    flex-direction: column-reverse; 
+    gap: 20px;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-description {
+    font-size: 12px;
+  }
+
+  .h1-btn {
+    font-size: 14px;
+
+  }
+
+  .banner-content {
+    width: 357px;
+    height: 252px;
+  }
+}
+
+
+
+
+
+
+/* main function er kaj suru korsi kintu */
+
+.background{
+    position: relative;
+    width: 1440px;
+    height: 880px;
+}
+
+
+.h1-tag{
+    text-align: center;
+  font-size: 2.5rem;
+  margin-top: 40px;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 1px solid sienna; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1440px;
+    height: 840px;
+    gap: 20px;
+    padding: 80px;
+    margin: 0 auto;
+    /* margin-top: 80px; */
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.box{
+    border: 2px solid #e0e0e0;
+    background-color: #fff;
+    width: 368px;
+    height: 480px;
+    border-radius: 18px;
+    /* justify-content: center; */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    box-shadow: 0 4px 3px #e0e0e0;
+}
+
+.box img{
+    max-width: 130px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.title{
+    font: 1.5rem;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #202020;
+    width: 210px;
+    height: 31px;
+}
+#card-1{
+    background: linear-gradient(180deg,#DEF5FF,#FFFFFF);
+}
+#card-2{
+    background: linear-gradient(180deg,#FFF4DC,#FFFFFF);
+}
+#card-3{
+    background: linear-gradient(180deg,#F2E8FF,#FFFFFF);
+}
+
+.box p {
+    font-size: 1rem;
+    color: #808080;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin: 30px;
+  }
+.box a{
+    /* color: #64C8FF; */
+    /* margin: 20px 0px; */
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+.a-1{
+    color: #64C8FF;
+}
+.a-2{
+    color: #F0AA00;
+}
+.a-3{
+    color: #8700FF;
+}
+
+ 
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
