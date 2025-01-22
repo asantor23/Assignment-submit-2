@@ -17,8 +17,32 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+.marquee-tag{              /* marquee tag */
+  position: fixed;
+  bottom: 5px;
+  /* height: 30px; */
+  font-weight: bold;
+  color: whitesmoke;
+  border: 2px solid #FFD700;
+  background-color: #FF0000;
+  padding: 10px 0;
+
+}
+
+@media  (max-width: 576px) {
+  .marquee-tag{
+    top: 0;
+    bottom: unset;
+    font-size: 14px;
+    padding: 0;
+  }
+
+  
+}
+
 .manu{
-  border: 0.5px solid orange;
+  /* border: 0.5px solid orange; */
   /* border-bottom: 0.5px solid orange ; */
   /* display: none; */
 }
@@ -147,6 +171,7 @@ body {
 
 
 /* Responsive Styles */
+
 @media (max-width: 676px) {
   .manu{
     border: 0.5px solid orange;
@@ -339,11 +364,17 @@ body {
   }
 
 
+  @media screen and (max-width: 576px) {
+    .carousel-buttons{
+      display: none;
+    }
+  }
 
 
 
-  /* Our Stories */
+   /* Our Stories */
 /* CSS */
+
 
 
   .section-22{
@@ -398,7 +429,6 @@ body {
     font-size: 1.5rem;
     width: 402px;
     height: 70px;
-    /* padding: 38px; */
     margin: 38px;
   }
 .card-description{
@@ -421,8 +451,6 @@ body {
 
 
 
-
-
   .container-2{
     /* border: 2px solid blue; */
     display: grid;
@@ -431,8 +459,8 @@ body {
     height: 630px;
     gap: 16px;
     
-    
   }
+
   .stories-1{
     /* border: 1px solid rgb(128, 98, 0); */
     width: 260px;
@@ -516,9 +544,7 @@ body {
 
 
 /* responsive --Our Stories */
-/* @media screen and (max-width: 676px) {
-  
-} */
+
 @media screen and (max-width: 576px) {
 
   .container-1 {
@@ -604,9 +630,10 @@ body {
 
 
 
-/* footer er kaj   */
+         /* footer er kaj   */
 
 /* General Styles */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -704,3 +731,5 @@ align-items: center;
     margin-top: 25px;
   }
 }
+
+
